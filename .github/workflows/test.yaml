@@ -25,6 +25,7 @@ jobs:
 
       - name: Run tests
         run: |
+          python -m pytest test/test_model.py -q
           cd test
           make clean
           make
